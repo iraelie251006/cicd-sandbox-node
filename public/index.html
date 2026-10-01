@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Sandbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CI/CD Pipeline Sandbox Target</h1>
+      <p>This application exists to test CI/CD pipeline stages. It is a lightweight dummy application to be built, tested, and deployed by your pipeline orchestration.</p>
+    </header>
+
+    <section class="status-section">
+      <h2>System Status</h2>
+      <div id="status-display" class="loading">Fetching status...</div>
+    </section>
+
+    <section class="stages-section">
+      <h2>Pipeline Stages</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Code Checkout</h3>
+          <p>Pull the latest code from the repository.</p>
+        </div>
+        <div class="card">
+          <h3>2. Linting</h3>
+          <p>Run static code analysis to ensure code quality.</p>
+        </div>
+        <div class="card">
+          <h3>3. Unit Testing</h3>
+          <p>Execute automated tests to verify application logic.</p>
+        </div>
+        <div class="card">
+          <h3>4. Image Build</h3>
+          <p>Containerize the application using Docker.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
